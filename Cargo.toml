@@ -1,0 +1,20 @@
+[package]
+description = "My helpers and shared libs for Advent of Code"
+edition = "2021"
+name = "aoc-shared"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "aocdlin"
+path = "src/dl_input/main.rs"
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+bytes = "1.2.1"
+clap = {version = "4.0.24", features = ["derive"]}
+eyre = "0.6.8"
+reqwest = {version = "0.11.12", features = ["blocking"]}
