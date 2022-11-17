@@ -1,6 +1,7 @@
+use aoc_shared::input;
 use eyre::Result;
 use pico_args::Arguments;
-use std::{env, fs::File, io::Write};
+use std::env;
 
 static USAGE: &str =
     "Usage: aocdlin [-T/--token <AOC_TOKEN>] [-O/--outfile <OUTFILE>] <YEAR> <DAY>";
@@ -20,14 +21,10 @@ fn main() -> Result<()> {
     let year = args.free_from_str::<u16>().expect(USAGE);
     let day = args.free_from_str::<u8>().expect(USAGE);
 
-    let input = aoc_shared::download_input(&token, &year, &day)?;
-    let mut file = File::options()
-        .create_new(true)
-        .write(true)
-        .open(&outfile)?;
-    file.write_all(&input)?;
+    let data = input::download(&token, &year, &day)?;
+    input::save(&outfile, &data)?;
 
-    println!("Saved {} bytes to {}", input.len(), &outfile);
+    println!("Saved {} bytes to {}", data.len(), &outfile);
 
     Ok(())
 }

@@ -2,12 +2,12 @@
 description = "My helpers and shared libs for Advent of Code"
 edition = "2021"
 name = "aoc-shared"
-version = "0.1.0"
+version = "0.2.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [[bin]]
-name = "aocdlin"
+name = "aocfin"
 
 [lib]
 name = "aoc_shared"
