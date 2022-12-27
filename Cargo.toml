@@ -2,19 +2,17 @@
 description = "My helpers and shared libs for Advent of Code"
 edition = "2021"
 name = "aoc_shared"
-version = "0.3.0"
+version = "0.4.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [[bin]]
 name = "aocfin"
 
-# [lib]
-# name = "aoc_shared"
+[lib]
+name = "aoc_shared"
 
 [dependencies]
-env_logger = "0.10.0"
-logging_timer = "1.1.0"
 eyre = "0.6.8"
 pico-args = "0.5.0"
 ureq = "2.5.0"
