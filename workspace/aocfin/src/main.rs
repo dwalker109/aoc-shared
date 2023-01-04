@@ -1,7 +1,7 @@
-use aoc_shared::input;
 use eyre::Result;
 use pico_args::Arguments;
 use std::env;
+use aocfin::input;
 
 static USAGE: &str =
     "Usage: aocdlin [-T/--token <AOC_TOKEN>] [-O/--outfile <OUTFILE>] <YEAR> <DAY>";
