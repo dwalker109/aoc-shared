@@ -1,0 +1,5 @@
+[favorites.aocday]
+description = "Scaffold a day's solution for Advent of Code"
+git = "https://github.com/dwalker109/aoc-shared"
+subfolder = "cargo-generate/cargo-day-template"
+vcs = "None"
