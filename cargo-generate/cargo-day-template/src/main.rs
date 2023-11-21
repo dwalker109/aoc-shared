@@ -1,4 +1,4 @@
-static INPUT: &str = include_str!("../input");
+static INPUT: &str = include_str!("../../../input/{{project-name}}");
 
 type Answer = aoc_shared::runner::AnswerTbd;
 
