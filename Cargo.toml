@@ -2,7 +2,7 @@
 description = "My helpers and shared libs for Advent of Code"
 edition = "2021"
 name = "aoc_shared"
-version = "0.4.0"
+version = "0.4.1"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
